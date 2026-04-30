@@ -1,0 +1,40 @@
+<mujoco model="Backward Fall Humanoid">
+  <include file="../common.xml"/>
+  <include file="runtime_humenv_model.xml"/>
+
+  <size memory="16M"/>
+
+  <custom>
+    <!-- agent -->
+    <numeric name="agent_planner" data="0"/>
+    <numeric name="agent_horizon" data="0.4"/>
+    <numeric name="agent_timestep" data="0.02"/>
+    <numeric name="sampling_sample_width" data="0.01"/>
+    <numeric name="sampling_control_width" data="0.01"/>
+    <numeric name="sampling_spline_points" data="4"/>
+    <numeric name="sampling_exploration" data="0.05"/>
+    <numeric name="gradient_spline_points" data="5"/>
+
+    <!-- residual parameters -->
+    <numeric name="residual_UprightTarget" data="0.88 0.5 1.0"/>
+    <numeric name="residual_BackwardVx" data="-0.75 -1.5 0.0"/>
+    <numeric name="residual_SettleHeight" data="0.16 0.08 0.25"/>
+    <numeric name="residual_LateralTarget" data="0.0 -0.2 0.2"/>
+    <numeric name="residual_SettleAngularVel" data="0.0 0.0 0.5"/>
+    <numeric name="residual_PhaseGate" data="0.0 0.0 1.0"/>
+  </custom>
+
+  <sensor>
+    <!-- Costs follow the residual indices in backward_fall.cc -->
+    <user name="UprightTrack" dim="1" user="0 2.0 0.0 1.0"/>
+    <user name="BackwardVelocity" dim="1" user="0 3.0 0.0 1.0"/>
+    <user name="LateralDrift" dim="1" user="0 1.5 0.0 1.0"/>
+    <user name="PelvisHeightPreImpact" dim="1" user="0 2.0 0.0 1.0"/>
+    <user name="ImpactVerticalVel" dim="1" user="0 1.5 0.0 1.0"/>
+    <user name="AngularVelocity" dim="1" user="0 0.4 0.0 1.0"/>
+    <user name="Control" dim="1" user="0 0.05 0.0 1.0"/>
+    <user name="SettleStillness" dim="1" user="0 4.0 0.0 1.0"/>
+    <user name="SettleHeight" dim="1" user="0 2.5 0.0 1.0"/>
+    <user name="SettleOrientation" dim="1" user="0 2.0 0.0 1.0"/>
+  </sensor>
+</mujoco>

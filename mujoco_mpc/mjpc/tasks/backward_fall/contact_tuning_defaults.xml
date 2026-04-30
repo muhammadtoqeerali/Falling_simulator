@@ -1,0 +1,15 @@
+<!-- Include or merge these defaults into the humanoid MJCF used for fall simulation. -->
+<mujoco>
+  <default class="fall_contact_soft">
+    <geom solref="0.020 1.15" solimp="0.85 0.95 0.004 0.50 2.0" friction="0.85 0.03 0.01" margin="0.004"/>
+  </default>
+
+  <default class="foot_contact_stable">
+    <geom solref="0.012 1.0" solimp="0.90 0.97 0.003 0.50 2.0" friction="1.15 0.06 0.02" margin="0.0025"/>
+  </default>
+
+  <worldbody>
+    <!-- example: assign class="foot_contact_stable" to foot/toe geoms -->
+    <!-- example: assign class="fall_contact_soft" to pelvis/torso/arm/head impact geoms -->
+  </worldbody>
+</mujoco>
