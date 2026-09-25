@@ -1,0 +1,12 @@
+lightning~=2.4.0
+torch~=2.5.1
+numpy~=2.2.0
+scikit-learn~=1.6.0
+joblib~=1.4.2
+torchmetrics~=1.6.0
+matplotlib~=3.10.0
+pandas~=2.2.3
+seaborn~=0.13.2
+ray~=2.40.0
+pdfkit~=1.0.0
+scipy~=1.14.1
