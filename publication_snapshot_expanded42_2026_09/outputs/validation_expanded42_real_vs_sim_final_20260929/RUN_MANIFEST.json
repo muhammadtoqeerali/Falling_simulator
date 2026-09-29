@@ -1,0 +1,27 @@
+{
+  "physical_inventory": "/mnt/hdd16T/ToqeerHomeBackup/mujoco_project/outputs/validation_v2/real_inventory_canonical.csv",
+  "simulator_manifest": "/mnt/hdd16T/ToqeerHomeBackup/mujoco_project/outputs/phase2_publication_gate_expanded42_v2/final_synthetic_event_policy_v2/canonical_synthetic_event_manifest_expanded42_v2.csv",
+  "physical_units": {
+    "acceleration_input": "mg",
+    "gyro_input": "mdps"
+  },
+  "simulator_truth_units": {
+    "acceleration_input": "m/s^2",
+    "gyro_input": "rad/s"
+  },
+  "comparison_units": {
+    "acceleration_magnitude": "g",
+    "gyro_magnitude": "deg/s"
+  },
+  "simulator_signal_source": "accel_true_xyz and gyro_true_xyz",
+  "pre_seconds": 0.5,
+  "post_seconds": 2.0,
+  "sampling_hz": 100.0,
+  "bootstraps": 500,
+  "protocol_review_tasks_univr": [
+    41,
+    42
+  ],
+  "simulator_rows_expected": 756,
+  "cnn_eligible_expected": 591
+}
