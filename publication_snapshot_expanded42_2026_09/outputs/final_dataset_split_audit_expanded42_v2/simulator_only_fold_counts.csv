@@ -1,0 +1,6 @@
+fold,train_trajectories,train_windows,train_activity,train_falling,val_trajectories,val_windows,val_activity,val_falling,test_trajectories,test_windows,test_activity,test_falling,train_val_trajectory_overlap,train_test_trajectory_overlap,val_test_trajectory_overlap,train_val_profile_overlap,train_test_profile_overlap,val_test_profile_overlap,train_val_task_overlap,train_test_task_overlap,val_test_task_overlap
+1,377,23972,22337,1635,95,5559,5163,396,119,7248,6803,445,0,0,0,40,40,38,16,17,16
+2,378,24661,23094,1567,95,5044,4652,392,118,7074,6557,517,0,0,0,38,41,37,18,16,16
+3,378,23224,21707,1517,95,5792,5425,367,118,7763,7171,592,0,0,0,37,41,36,18,17,17
+4,378,23794,22127,1667,95,5763,5407,356,118,7222,6769,453,0,0,0,38,39,35,17,18,17
+5,378,23926,22298,1628,95,5381,5002,379,118,7472,7003,469,0,0,0,39,40,37,17,17,17

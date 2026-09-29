@@ -1,0 +1,3 @@
+domain,identities_or_profiles,source_trajectories_or_events,cnn_eligible_trajectories,activity_windows,falling_windows,total_windows,notes
+Physical,71,6325,,1287361,9806,1297167,71 physical identities = 32 KFall + 29 UniVrFall lab + 10 UniVrFall worksite
+Simulated,42,756,591.0,34303,2476,36779,42 parameterized profiles; 20 female / 22 male; 18 tasks. Synthetic Activity windows are pre-onset portions of simulated fall trajectories.

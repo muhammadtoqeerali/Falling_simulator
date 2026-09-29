@@ -1,0 +1,5 @@
+condition,ratio_of_physical_train_falling,draws,unique_draws_sum_across_folds,repeated_draws,min_draws_per_fold,max_draws_per_fold,min_unique_per_fold,max_unique_per_fold,overall_repeat_fraction
+EXP04_MIX20,0.2,6350,6350,0,1187,1332,1187,1332,0.0
+EXP05_MIX50,0.5,15877,12380,3497,2967,3331,2476,2476,0.22025571581533035
+EXP06_MIX70,0.7,22226,12380,9846,4153,4663,2476,2476,0.44299469090254656
+EXP07_MIX100,1.0,31752,12380,19372,5933,6662,2476,2476,0.610103300579491
