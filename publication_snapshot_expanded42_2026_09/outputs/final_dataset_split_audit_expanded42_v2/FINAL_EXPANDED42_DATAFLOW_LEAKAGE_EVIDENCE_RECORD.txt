@@ -1,0 +1,82 @@
+FINAL EXPANDED42 DATASET / DATA-FLOW / LEAKAGE EVIDENCE RECORD
+====================================================================================================
+
+SCOPE
+----------------------------------------------------------------------------------------------------
+Current manuscript comparison only:
+  Physical-only
+  Simulator-only
+  Physical + SIM20
+  Physical + SIM50
+  Physical + SIM70
+  Physical + SIM100
+
+EXP02_SIM_FALL_SUBSTITUTION is not part of this V2 campaign.
+
+PHYSICAL DATA
+----------------------------------------------------------------------------------------------------
+Identities: 71 = 32 KFall + 29 UniVrFall laboratory + 10 UniVrFall worksite
+Recordings/events: 6,325 = 3,396 Activity + 2,929 Falling
+Windows: 1,297,167 = 1,287,361 Activity + 9,806 Falling
+Physical splitting remains five-fold subject-independent with zero subject overlap.
+Physical validation/test folds are unchanged across Physical-only and all mixed conditions.
+
+EXPANDED SIMULATED DATA
+----------------------------------------------------------------------------------------------------
+Raw profile-task simulations: 756 = 42 profiles x 18 tasks
+Profiles: 42 = 20 female + 22 male
+CNN-eligible complete trajectories: 591
+CNN windows: 36,779 = 34,303 Activity + 2,476 Falling
+
+Synthetic Activity windows are pre-onset portions of the same simulated fall trajectories; they are not an independent synthetic ADL-only trial collection.
+
+SIMULATOR-ONLY SPLIT
+----------------------------------------------------------------------------------------------------
+Atomic split unit: complete trial_uid_resolved trajectory. Five-fold KFold random_state=42 followed by 80/20 train/validation trajectory split with random_state=42.
+Trajectory train/validation/test overlap is zero in every fold.
+This is trajectory-disjoint, not profile-held-out or task-held-out; profile/task overlap across partitions can exist.
+
+MIXED CONDITIONS
+----------------------------------------------------------------------------------------------------
+Only simulated Falling windows are added to PHYSICAL TRAINING. Physical validation and held-out physical testing remain unchanged; simulated validation/test windows = 0.
+
+SIM20/SIM50/SIM70/SIM100 are defined relative to each fold's physical TRAIN Falling-window count, not relative to all training windows.
+
+EXP04_MIX20: total draws=6,350; per-fold draws=1,187-1,332; unique per fold=1,187-1,332; repeated draws=0; overall repeat fraction=0.00%
+EXP05_MIX50: total draws=15,877; per-fold draws=2,967-3,331; unique per fold=2,476-2,476; repeated draws=3,497; overall repeat fraction=22.03%
+EXP06_MIX70: total draws=22,226; per-fold draws=4,153-4,663; unique per fold=2,476-2,476; repeated draws=9,846; overall repeat fraction=44.30%
+EXP07_MIX100: total draws=31,752; per-fold draws=5,933-6,662; unique per fold=2,476-2,476; repeated draws=19,372; overall repeat fraction=61.01%
+
+Higher ratios therefore increase training exposure to the finite synthetic Falling pool whenever the requested number of draws exceeds the available unique Falling windows; repeated draws are not independent new observations.
+
+INTEGRITY
+----------------------------------------------------------------------------------------------------
+Checks passed: 146/146
+Held-out physical test labels are identical across all five physical-test conditions.
+All mixed synthetic draws are Falling-class training samples.
+Simulator-only trajectory overlap across train/validation/test is zero.
+EXP02 is absent from the V2 pooled results.
+
+RESULTS
+----------------------------------------------------------------------------------------------------
+Authoritative pooled results are stored in:
+  /mnt/hdd16T/ToqeerHomeBackup/mujoco_project/outputs/protechto_exact_full_campaign_expanded42_v2/final_results_posthoc/POOLED_ALL_RESULTS.csv
+
+Paper-ready V2 pooled rows:
+
+EXP01_REAL_ONLY          Segment N=1297167 BalAcc= 85.01% PrecF= 93.40% RecallF= 70.05% F1F= 80.06%
+EXP01_REAL_ONLY          Event   N=   6325 BalAcc= 89.30% PrecF= 98.73% RecallF= 79.48% F1F= 88.07%
+EXP04_MIX20              Segment N=1297167 BalAcc= 84.41% PrecF= 94.24% RecallF= 68.85% F1F= 79.56%
+EXP04_MIX20              Event   N=   6325 BalAcc= 88.99% PrecF= 98.76% RecallF= 78.83% F1F= 87.68%
+EXP05_MIX50              Segment N=1297167 BalAcc= 84.87% PrecF= 93.42% RecallF= 69.77% F1F= 79.88%
+EXP05_MIX50              Event   N=   6325 BalAcc= 89.42% PrecF= 98.77% RecallF= 79.69% F1F= 88.21%
+EXP06_MIX70              Segment N=1297167 BalAcc= 84.52% PrecF= 93.25% RecallF= 69.07% F1F= 79.36%
+EXP06_MIX70              Event   N=   6325 BalAcc= 88.67% PrecF= 98.62% RecallF= 78.29% F1F= 87.29%
+EXP07_MIX100             Segment N=1297167 BalAcc= 83.54% PrecF= 94.66% RecallF= 67.10% F1F= 78.53%
+EXP07_MIX100             Event   N=   6325 BalAcc= 87.73% PrecF= 98.89% RecallF= 76.20% F1F= 86.08%
+EXP03_SIM_ONLY_FULL      Segment N=  36779 BalAcc= 89.61% PrecF= 93.02% RecallF= 79.64% F1F= 85.81%
+EXP03_SIM_ONLY_FULL      Event   N=    591 BalAcc=   nan% PrecF=100.00% RecallF= 66.33% F1F= 79.76%
+
+INTERPRETATION BOUNDARY
+----------------------------------------------------------------------------------------------------
+This audit establishes dataset composition, partition integrity, trajectory/subject separation and synthetic-reuse accounting. It does not by itself prove absence of model overfitting.

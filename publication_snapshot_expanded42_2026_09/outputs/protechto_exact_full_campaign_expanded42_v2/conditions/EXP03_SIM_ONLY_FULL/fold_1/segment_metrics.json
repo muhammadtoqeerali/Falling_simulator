@@ -1,0 +1,18 @@
+{
+  "accuracy": 0.9852373068432672,
+  "balanced_accuracy": 0.9144285320256926,
+  "f1_activity": 0.9921594489631421,
+  "f1_fall": 0.8739693757361602,
+  "fn": 74,
+  "fp": 33,
+  "n": 7248,
+  "precision_activity": 0.989187609585038,
+  "precision_fall": 0.9183168316831684,
+  "recall_activity": 0.9951491988828458,
+  "recall_fall": 0.8337078651685393,
+  "specificity": 0.9951491988828458,
+  "support_activity": 6803,
+  "support_fall": 445,
+  "tn": 6770,
+  "tp": 371
+}

@@ -1,0 +1,38 @@
+{
+  "audit_version": "expanded42_final_dataflow_v2",
+  "campaign": "/mnt/hdd16T/ToqeerHomeBackup/mujoco_project/outputs/protechto_exact_full_campaign_expanded42_v2",
+  "canonical_manifest": "/mnt/hdd16T/ToqeerHomeBackup/mujoco_project/outputs/phase2_publication_gate_expanded42_v2/final_synthetic_event_policy_v2/canonical_synthetic_event_manifest_expanded42_v2.csv",
+  "canonical_manifest_sha256": "5bd73c10ddf115d1bb31cbc85a60b0b4c03567831952b2bcbc4b9e63d939c643",
+  "eligible_trajectories": 591,
+  "integrity_checks_passed": 146,
+  "integrity_checks_total": 146,
+  "paper_conditions": [
+    "EXP01_REAL_ONLY",
+    "EXP03_SIM_ONLY_FULL",
+    "EXP04_MIX20",
+    "EXP05_MIX50",
+    "EXP06_MIX70",
+    "EXP07_MIX100"
+  ],
+  "physical_global": {
+    "activity_events": 3396,
+    "activity_windows": 1287361,
+    "falling_events": 2929,
+    "falling_windows": 9806,
+    "identities": 71,
+    "kfall_identities": 32,
+    "recordings_events": 6325,
+    "univr_lab_identities": 29,
+    "univr_worksite_identities": 10,
+    "windows": 1297167
+  },
+  "profiles": 42,
+  "result_root": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master/results/CNN/300ms/PROTECHTO_EXACT_EXPANDED42_20260926_170835",
+  "run_id": "PROTECHTO_EXACT_EXPANDED42_20260926_170835",
+  "source_simulations": 756,
+  "synthetic_activity_windows": 34303,
+  "synthetic_cache": "/mnt/hdd16T/ToqeerHomeBackup/mujoco_project/outputs/protechto_exact_synthetic_cache_expanded42_v2",
+  "synthetic_falling_windows": 2476,
+  "synthetic_total_windows": 36779,
+  "tasks": 18
+}

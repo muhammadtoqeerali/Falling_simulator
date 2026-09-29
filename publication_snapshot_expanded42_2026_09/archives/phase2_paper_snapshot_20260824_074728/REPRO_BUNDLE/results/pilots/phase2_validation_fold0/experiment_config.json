@@ -1,0 +1,20 @@
+{
+    "window_size": 30,
+    "batch_size": 64,
+    "epochs": 10,
+    "patience": 5,
+    "experiments": {
+        "EXP01_REAL_ONLY": {
+            "real_fraction": 1.0,
+            "sim_fraction": 0.0
+        },
+        "EXP02_SIM_ONLY": {
+            "real_fraction": 0.0,
+            "sim_fraction": 1.0
+        },
+        "EXP03_MIX20": {
+            "real_fraction": 1.0,
+            "sim_fraction": 0.2
+        }
+    }
+}

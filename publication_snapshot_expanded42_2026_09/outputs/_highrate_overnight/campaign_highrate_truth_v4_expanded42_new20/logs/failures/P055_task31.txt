@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/mnt/hdd16T/ToqeerHomeBackup/mujoco_project/run_rne_expanded_42_profile_campaign_v2.py", line 1022, in main
+    summary = _run_one_semantic_scenario(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/hdd16T/ToqeerHomeBackup/mujoco_project/run_rne_expanded_42_profile_campaign_v2.py", line 524, in _run_one_semantic_scenario
+    summary = run_simulation(scenario, subject)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/hdd16T/ToqeerHomeBackup/mujoco_project/fall_core.py", line 773, in run_simulation
+    native_renderer = mujoco.Renderer(
+                      ^^^^^^^^^^^^^^^^
+  File "/mnt/hdd16T/ToqeerHomeBackup/mujoco_project/.venv/lib/python3.12/site-packages/mujoco/renderer.py", line 54, in __init__
+    raise ValueError(f"""
+ValueError: Image width 1920 > framebuffer width 1280. Either reduce the image
+width or specify a larger offscreen framebuffer in the model XML using the
+clause:
+<visual>
+  <global offwidth="my_width"/>
+</visual>

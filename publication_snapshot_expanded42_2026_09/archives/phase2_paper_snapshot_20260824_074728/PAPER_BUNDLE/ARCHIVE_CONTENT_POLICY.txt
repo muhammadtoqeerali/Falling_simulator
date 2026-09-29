@@ -1,0 +1,37 @@
+ARCHIVE CONTENT POLICY
+
+PAPER_BUNDLE
+============
+Contains:
+- final metrics
+- pilot metrics
+- confusion matrices
+- training histories
+- campaign logs
+- configurations
+- source-code snapshots
+- CNN / normalizer source
+- methodology notes
+- label-count audit
+- software/hardware metadata
+- SHA256 manifest
+
+Does NOT contain:
+- model checkpoints
+- giant X.npy feature caches
+- raw datasets
+
+
+REPRO_BUNDLE
+============
+Contains everything useful from PAPER_BUNDLE plus:
+- best_model.pth checkpoints
+- y.npy label cache where available
+
+Does NOT contain:
+- giant X.npy feature cache
+- raw KFall / UniVRFall datasets
+- raw Extended35 campaign data
+
+Those datasets remain in their original storage locations and can be
+regenerated/reloaded using the archived source code.

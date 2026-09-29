@@ -1,0 +1,217 @@
+PHASE-2 RESEARCH SNAPSHOT
+Created: 2026-08-24T07:48:05.029683
+
+HOST
+====
+iot4care-workstation
+
+UNAME
+=====
+Linux iot4care-workstation 6.8.0-124-generic #124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC  x86_64 x86_64 x86_64 GNU/Linux
+
+PYTHON
+======
+Python 3.12.3
+
+CUDA / GPU
+==========
+Mon Aug 24 07:48:05 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.173.02             Driver Version: 580.173.02     CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 4090        Off |   00000000:01:00.0 Off |                  Off |
+|  0%   44C    P8             18W /  450W |       0MiB /  24564MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA GeForce RTX 4090        Off |   00000000:03:00.0 Off |                  Off |
+|  0%   44C    P8             11W /  450W |       0MiB /  24564MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+
+DISK
+====
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda2        17T  3,3T   14T  20% /mnt/hdd16T
+
+PROJECT GIT COMMIT
+==================
+db9a7b67163edcf58d64d66afd4ed3271b34899b
+
+PROJECT GIT STATUS
+==================
+M backward_fall_walking_best.py
+ M fall_core.py
+ M legacy_runtime_common.py
+ M scenario20_legacy.py
+ M scenario21_legacy.py
+ M scenario22_legacy.py
+ M scenario23_legacy.py
+ M scenario24_legacy.py
+ M scenario250_legacy.py
+ M scenario25_legacy.py
+ M scenario26_legacy.py
+ M scenario27_legacy.py
+ M scenario28_legacy.py
+ M scenario290_legacy.py
+ M scenario291_legacy.py
+ M scenario29_legacy.py
+ M scenario30_legacy.py
+ M scenario31_legacy.py
+ M scenario32_legacy.py
+ M scenario33_legacy.py
+ M scenario37_legacy.py
+ M scenario38_legacy.py
+ M scenario39_legacy.py
+ M scenario40_legacy.py
+ D scenario41_legacy-vertical_down.py
+ M scenario41_legacy.py
+ M scenario42_legacy.py
+ M scenario43_legacy.py
+ M scenario44_legacy.py
+?? _disabled_imu_patch_files/
+?? _patch_backups/
+?? analyze_real_vs_sim_univr.py
+?? archives/
+?? audit_early_impact_semantics.py
+?? audit_existing_onset_rules.py
+?? audit_highrate_semantics_events.py
+?? audit_legacy_channel_semantics.py
+?? batch_run_all_labeled.py
+?? batch_run_all_labeled_video.py
+?? build_extended35_master_index.py
+?? build_highrate_univr_dataset.py
+?? build_paired_legacy_univr_dataset.py
+?? build_real_validation_inventory_v2.py
+?? build_simulated_univr_dataset.py
+?? build_simulated_univr_dataset_all_subjects.py
+?? build_truth_only_rich221_pair.py
+?? clean_extended35_master_index.py
+?? compare_v2_acquisition_variants.py
+?? compare_v2_truth_sampling_rich221.py
+?? create_acceleration_distribution_figures.py
+?? create_extended35_methods_table.py
+?? create_extended35_split_table.py
+?? create_extended35_taxonomy_table.py
+?? create_final_normalized_range_comparison.py
+?? create_final_true_waveform_comparison_all.py
+?? create_normalized_signal_comparison.py
+?? create_robust_acceleration_comparison.py
+?? create_robust_dynamic_gyro_comparison.py
+?? create_signal_statistics_comparison.py
+?? create_taxonomy_comparison.py
+?? create_true_dynamic_gyro_comparison.py
+?? create_true_waveform_comparison.py
+?? create_waveform_statistics_comparison.py
+?? deep_axis_sign_check.py
+?? diagnose_gyro_frame_semantics.py
+?? extract_extended35_physics_features.py
+?? finalize_highrate_event_manifest.py
+?? generate_extended35_characterization.py
+?? generate_publication_results.py
+?? high_rate_imu_sidecar.py
+?? highrate_runtime_bridge.py
+?? imu_pipeline_labels.py
+?? label_imu_csv.py
+?? make_protechto_compatible_simulated_dataset.py
+?? outputs/
+?? patch_highrate_imu_runtime.py
+?? protechto_requirements_clean.txt
+?? recover_highrate_events_from_logs.py
+?? run_extended_35_profile_campaign.py
+?? run_extended_35_profile_campaign_before_resume_fix.py
+?? run_extended_35_profile_campaign_before_scenario_fix.py
+?? run_extended_35_profile_campaign_v3.py
+?? run_extended_35_profile_campaign_v4.py
+?? run_extended_campaign_overnight.sh
+?? run_extended_campaign_overnight_v2.sh
+?? run_extended_campaign_overnight_v4.sh
+?? run_extended_campaign_overnight_v5_xvfb.sh
+?? run_fall_dispatcher_with_labels.py
+?? run_highrate_all_profiles.py
+?? run_highrate_all_profiles.py.before_xvfb_20260817_152943
+?? run_highrate_overnight.sh
+?? run_highrate_overnight.sh.before_profiles_20260817_151705
+?? run_phase2_complete_cnn_campaign.py
+?? run_phase2_complete_cnn_campaign_backup_ready.py
+?? run_phase2_complete_final_campaign.py
+?? run_phase2_pilot_EXP02_EXP03.py
+?? run_phase2_pilot_EXP02_EXP03_backup_before_fix.py
+?? run_phase2_pilot_EXP02_EXP03_continue.py
+?? run_phase2_pilot_EXP02_EXP03_continue_backup_before_varfix.py
+?? run_phase2_pilot_VALIDATED_backup.py
+?? run_phase2_validation_fold0.py
+?? run_v2_publication_variant.py
+?? script_backups_before_resume/
+?? validate_common_onset_reconstruction.py
+?? validate_dynamics_impact_recovery.py
+?? validate_gyro_inertial_frame_reconstruction.py
+?? validate_legacy_truth_reconstruction.py
+?? validate_legacy_truth_reconstruction.py.before_suffix_fix
+?? validate_simulator_against_real_v2.py
+?? verify_imu_axis_report.py
+?? verify_simulated_univr_dataset.py
+
+PROTECHTO GIT COMMIT
+====================
+ae861f9840bd75ca8982050716bea22580afc144
+
+PROTECHTO GIT STATUS
+====================
+M config.json
+ M models/__init__.py
+ M models/modules/IMUNormalizer.py
+?? Protechto_master_inventory.txt
+?? Protechto_master_source.tar.gz
+?? aggregate_full_canonical_learning_curve.py
+?? build_complete_learning_curve_tables.py
+?? config.json.before_path_fix
+?? dataloaders/CanonicalKFoldDataloader.py
+?? dataloaders/CanonicalLearningCurveKFoldDataloader.py
+?? dataloaders/FullCanonicalLearningCurveKFoldDataloader.py
+?? dataloaders/LearningCurveKFoldDataloader.py
+?? dataloaders/LearningCurveKFoldDataloader.py.before_mode_wiring
+?? dataloaders/canonical_augmentation.py
+?? dataloaders/learning_curve_augmentation.py
+?? evaluate_canonical_cnn.py
+?? evaluate_canonical_rf.py
+?? evaluate_canonical_threshold.py
+?? evaluate_full_canonical_learning_curve.py
+?? evaluate_full_canonical_learning_curve_threshold.py
+?? evaluate_learning_curve.py
+?? forensic_reconstruction/
+?? learning_curve_manifests/
+?? lightning_logs/KFall/version_2171/
+?? lightning_logs/KFall/version_2172/
+?? lightning_logs/KFall/version_2173/
+?? lightning_logs/KFall/version_2174/
+?? lightning_logs/KFall/version_2175/
+?? lightning_logs/canonical/
+?? lightning_logs/learning_curves/
+?? models/__init__.py.backup
+?? models/modules/IMUNormalizer_backup_before_physical_units.py
+?? protechto_requirements.txt
+?? results/CNN/300ms/REPLAY_VAEGAN_2025-08-03_10_32_59/
+?? results/canonical/
+?? results/learning_curves/
+?? run_logs/
+?? run_state/
+?? simulation/LearningCurveMetrics.py
+?? simulation/LearningCurveRF.py
+?? simulation/LearningCurveSimulationLoader.py
+?? tools/
+?? train_canonical.py
+?? train_canonical_learning_curve.py
+?? train_full_canonical_learning_curve.py
+?? train_learning_curve.py
