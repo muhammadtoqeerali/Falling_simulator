@@ -1,0 +1,58 @@
+EXPANDED-42 PUBLICATION EVIDENCE AUDIT
+================================================================================
+ROOT: /mnt/hdd16T/ToqeerHomeBackup/mujoco_project
+CAMPAIGN: /mnt/hdd16T/ToqeerHomeBackup/mujoco_project/outputs/_highrate_overnight/campaign_highrate_truth_v4_expanded42_new20
+CAMPAIGN_EXISTS: True
+
+CAMPAIGN FILE COUNTS
+--------------------------------------------------------------------------------
+highrate_truth_csv: 360
+manifest_csv: 2
+manifest_json: 360
+other: 722
+other_campaign_csv: 365
+other_campaign_json: 1
+
+HDF5_FILES_FOUND: 0
+DYNAMICS_FRAME_CSVS_FOUND: 0
+HIGHRATE_TRUTH_CSVS_FOUND: 360
+
+CONVERSION REPORT CANDIDATES
+--------------------------------------------------------------------------------
+score=8 matches=6 path=outputs/paper_dataset_split_audit_stage1/artifacts/outputs/paper_evidence_archive_v1/09_SIMULATOR_VALIDATION_GALLERY/files/project_outputs/simulated_dataset_highrate_truth_rich221_v1/conversion_reports/conversion_report_all_subjects.csv
+score=8 matches=6 path=outputs/paper_dataset_split_audit_stage1/artifacts/outputs/paper_evidence_archive_v1/09_SIMULATOR_VALIDATION_GALLERY/files/project_outputs/simulated_dataset_highrate_truth_v1/conversion_reports/conversion_report_all_subjects.before_output_path_fix.csv
+score=8 matches=6 path=outputs/paper_dataset_split_audit_stage1/artifacts/outputs/paper_evidence_archive_v1/09_SIMULATOR_VALIDATION_GALLERY/files/project_outputs/simulated_dataset_highrate_truth_v1/conversion_reports/conversion_report_all_subjects.csv
+score=8 matches=6 path=outputs/paper_dataset_split_audit_stage1/artifacts/outputs/simulated_dataset_highrate_truth_rich221_v1/conversion_reports/conversion_report_all_subjects.csv
+score=8 matches=6 path=outputs/paper_dataset_split_audit_stage1/artifacts/outputs/simulated_dataset_highrate_truth_v1/conversion_reports/conversion_report_all_subjects.before_output_path_fix.csv
+score=8 matches=6 path=outputs/paper_dataset_split_audit_stage1/artifacts/outputs/simulated_dataset_highrate_truth_v1/conversion_reports/conversion_report_all_subjects.csv
+score=8 matches=6 path=outputs/paper_evidence_archive_v1/09_SIMULATOR_VALIDATION_GALLERY/files/project_outputs/simulated_dataset_highrate_truth_rich221_v1/conversion_reports/conversion_report_all_subjects.csv
+score=8 matches=6 path=outputs/paper_evidence_archive_v1/09_SIMULATOR_VALIDATION_GALLERY/files/project_outputs/simulated_dataset_highrate_truth_v1/conversion_reports/conversion_report_all_subjects.before_output_path_fix.csv
+score=8 matches=6 path=outputs/paper_evidence_archive_v1/09_SIMULATOR_VALIDATION_GALLERY/files/project_outputs/simulated_dataset_highrate_truth_v1/conversion_reports/conversion_report_all_subjects.csv
+score=8 matches=6 path=outputs/simulated_dataset_highrate_truth_rich221_v1/conversion_reports/conversion_report_all_subjects.csv
+score=8 matches=6 path=outputs/simulated_dataset_highrate_truth_v1/conversion_reports/conversion_report_all_subjects.before_output_path_fix.csv
+score=8 matches=6 path=outputs/simulated_dataset_highrate_truth_v1/conversion_reports/conversion_report_all_subjects.csv
+score=6 matches=6 path=outputs/paper_dataset_split_audit_stage1/artifacts/outputs/paper_evidence_archive_v1/09_SIMULATOR_VALIDATION_GALLERY/files/project_outputs/simulated_dataset_all_subjects/conversion_reports/conversion_report_all_subjects.csv
+score=6 matches=6 path=outputs/paper_dataset_split_audit_stage1/artifacts/outputs/paper_evidence_archive_v1/09_SIMULATOR_VALIDATION_GALLERY/files/project_outputs/simulated_dataset_legacy_paired_v1/conversion_reports/conversion_report_all_subjects.before_output_path_fix.csv
+score=6 matches=6 path=outputs/paper_dataset_split_audit_stage1/artifacts/outputs/paper_evidence_archive_v1/09_SIMULATOR_VALIDATION_GALLERY/files/project_outputs/simulated_dataset_legacy_paired_v1/conversion_reports/conversion_report_all_subjects.csv
+score=6 matches=6 path=outputs/paper_dataset_split_audit_stage1/artifacts/outputs/paper_evidence_archive_v1/09_SIMULATOR_VALIDATION_GALLERY/files/project_outputs/simulated_dataset_legacy_truth_rich221_v1/conversion_reports/conversion_report_all_subjects.csv
+score=6 matches=6 path=outputs/paper_dataset_split_audit_stage1/artifacts/outputs/simulated_dataset_all_subjects/conversion_reports/conversion_report_all_subjects.csv
+score=6 matches=6 path=outputs/paper_dataset_split_audit_stage1/artifacts/outputs/simulated_dataset_legacy_paired_v1/conversion_reports/conversion_report_all_subjects.before_output_path_fix.csv
+score=6 matches=6 path=outputs/paper_dataset_split_audit_stage1/artifacts/outputs/simulated_dataset_legacy_paired_v1/conversion_reports/conversion_report_all_subjects.csv
+score=6 matches=6 path=outputs/paper_dataset_split_audit_stage1/artifacts/outputs/simulated_dataset_legacy_truth_rich221_v1/conversion_reports/conversion_report_all_subjects.csv
+
+DYNAMICS COLUMNS OF PUBLICATION INTEREST
+--------------------------------------------------------------------------------
+No representative dynamics columns found.
+
+HDF5 DATASETS OF PUBLICATION INTEREST
+--------------------------------------------------------------------------------
+h5py unavailable; HDF5 not inspected.
+
+OUTPUT FILES
+--------------------------------------------------------------------------------
+/mnt/hdd16T/ToqeerHomeBackup/mujoco_project/outputs/publication_strengthening_audit_expanded42_20260929/AUDIT_SUMMARY.txt
+/mnt/hdd16T/ToqeerHomeBackup/mujoco_project/outputs/publication_strengthening_audit_expanded42_20260929/candidate_files.csv
+/mnt/hdd16T/ToqeerHomeBackup/mujoco_project/outputs/publication_strengthening_audit_expanded42_20260929/csv_schema.csv
+/mnt/hdd16T/ToqeerHomeBackup/mujoco_project/outputs/publication_strengthening_audit_expanded42_20260929/conversion_report_candidates.csv
+/mnt/hdd16T/ToqeerHomeBackup/mujoco_project/outputs/publication_strengthening_audit_expanded42_20260929/dynamics_columns.csv
+/mnt/hdd16T/ToqeerHomeBackup/mujoco_project/outputs/publication_strengthening_audit_expanded42_20260929/hdf5_schema.csv
