@@ -1,0 +1,9 @@
+column,interpretable_as_boolean,true_count,false_count,missing_count
+cnn_recovered_impact_time_s,False,,,0
+cnn_lead_time_ms,False,,,0
+raw_falling_window_count,True,173.0,165.0,418
+cnn_event_order_valid,True,756.0,0.0,0
+cnn_event_inside_truth,True,756.0,0.0,0
+cnn_fall_eligible,True,591.0,165.0,0
+eligibility_policy,False,,,0
+cnn_exclusion_reason,False,,,591

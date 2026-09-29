@@ -1,0 +1,39 @@
+AUTHORITATIVE EXPANDED-42 CANONICAL AUDIT
+================================================================================
+canonical_manifest=/mnt/hdd16T/ToqeerHomeBackup/mujoco_project/outputs/phase2_publication_gate_expanded42_v2/final_synthetic_event_policy_v2/canonical_synthetic_event_manifest_expanded42_v2.csv
+canonical_rows=756
+canonical_columns=25
+profile_column=profile_id
+task_column=task_id
+profiles=42
+tasks=18
+onset_frame_column=None
+impact_frame_column=None
+onset_time_column=fall_onset_time_s
+impact_time_column=None
+derived_eligibility_method=unavailable
+derived_eligible=0
+derived_ineligible=0
+derived_unresolved=756
+explicit_eligibility_columns=cnn_recovered_impact_time_s | cnn_lead_time_ms | raw_falling_window_count | cnn_event_order_valid | cnn_event_inside_truth | cnn_fall_eligible | eligibility_policy | cnn_exclusion_reason
+canonical_highrate_truth_paths_found=756
+canonical_truth_existing=756
+canonical_dynamics_siblings_existing=0
+
+TRUTH SOURCE ROOTS
+--------------------------------------------------------------------------------
+                                                                                               source_campaign_root  truth_files  truth_existing  dynamics_existing
+/mnt/hdd16T/ToqeerHomeBackup/mujoco_project/outputs/_highrate_overnight/campaign_highrate_truth_v3_rne_corrected396          396             396                  0
+/mnt/hdd16T/ToqeerHomeBackup/mujoco_project/outputs/_highrate_overnight/campaign_highrate_truth_v4_expanded42_new20          360             360                  0
+
+ELIGIBILITY-RELATED COLUMNS
+--------------------------------------------------------------------------------
+                     column  interpretable_as_boolean  true_count  false_count  missing_count
+cnn_recovered_impact_time_s                     False         NaN          NaN              0
+           cnn_lead_time_ms                     False         NaN          NaN              0
+   raw_falling_window_count                      True       173.0        165.0            418
+      cnn_event_order_valid                      True       756.0          0.0              0
+     cnn_event_inside_truth                      True       756.0          0.0              0
+          cnn_fall_eligible                      True       591.0        165.0              0
+         eligibility_policy                     False         NaN          NaN              0
+       cnn_exclusion_reason                     False         NaN          NaN            591

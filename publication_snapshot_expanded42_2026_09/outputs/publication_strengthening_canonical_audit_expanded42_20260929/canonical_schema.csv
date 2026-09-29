@@ -1,0 +1,26 @@
+column,dtype,nonnull,unique_nonnull,examples
+profile_id,str,756,42,P014 | P015 | P016 | P017 | P018
+task_id,int64,756,18,20 | 21 | 22 | 23 | 24
+source_run_dir,str,756,756,/mnt/hdd16T/ToqeerHomeBackup/mujoco_project/outputs/_highrate_overnight/campaign_highrate_truth_v3_rne_corrected396/runs/P014/task_20/scenario20_age20_h1p52_sex_female_w48p0_20260826_105752 | /mnt/hdd16T/ToqeerHomeBackup/mujoco_project/outputs/_highrate_overnight/campaign_highrate_truth_v3_rne_corrected396/runs/P014/task_21/scenario21_age20_h1p52_sex_female_w48p0_20260826_110527 | /mnt/hdd16T/ToqeerHomeBackup/mujoco_project/outputs/_highrate_overnight/campaign_highrate_truth_v3_rne_corrected396/runs/P014/task_22/scenario22_age20_h1p52_sex_female_w48p0_20260826_110608 | /mnt/hdd16T/ToqeerHomeBackup/mujoco_project/outputs/_highrate_overnight/campaign_highrate_truth_v3_rne_corrected396/runs/P014/task_23/scenario23_age20_h1p52_sex_female_w48p0_20260826_110646 | /mnt/hdd16T/ToqeerHomeBackup/mujoco_project/outputs/_highrate_overnight/campaign_highrate_truth_v3_rne_corrected396/runs/P014/task_24/scenario24_age20_h1p52_sex_female_w48p0_20260826_110754
+truth_csv,str,756,756,/mnt/hdd16T/ToqeerHomeBackup/mujoco_project/outputs/_highrate_overnight/campaign_highrate_truth_v3_rne_corrected396/runs/P014/task_20/scenario20_age20_h1p52_sex_female_w48p0_20260826_105752/fall_scenario20_age20_20260826_105752_highrate_truth.csv | /mnt/hdd16T/ToqeerHomeBackup/mujoco_project/outputs/_highrate_overnight/campaign_highrate_truth_v3_rne_corrected396/runs/P014/task_21/scenario21_age20_h1p52_sex_female_w48p0_20260826_110527/fall_scenario21_age20_20260826_110527_highrate_truth.csv | /mnt/hdd16T/ToqeerHomeBackup/mujoco_project/outputs/_highrate_overnight/campaign_highrate_truth_v3_rne_corrected396/runs/P014/task_22/scenario22_age20_h1p52_sex_female_w48p0_20260826_110608/fall_scenario22_age20_20260826_110608_highrate_truth.csv | /mnt/hdd16T/ToqeerHomeBackup/mujoco_project/outputs/_highrate_overnight/campaign_highrate_truth_v3_rne_corrected396/runs/P014/task_23/scenario23_age20_h1p52_sex_female_w48p0_20260826_110646/fall_scenario23_age20_20260826_110646_highrate_truth.csv | /mnt/hdd16T/ToqeerHomeBackup/mujoco_project/outputs/_highrate_overnight/campaign_highrate_truth_v3_rne_corrected396/runs/P014/task_24/scenario24_age20_h1p52_sex_female_w48p0_20260826_110754/fall_scenario24_age20_20260826_110754_highrate_truth.csv
+fall_onset_time_s,float64,756,187,6.266666666666894 | 5.500000000000108 | 5.466666666666769 | 16.966666666668566 | 17.400000000001967
+original_manifest_impact_time_s,float64,756,218,6.533333333333602 | 5.6666666666668 | 5.500000000000108 | 6.600000000000279 | 5.866666666666832
+cnn_recovered_impact_time_s,float64,756,259,6.5733 | 5.8333 | 5.6333 | 7.3633 | 5.9033
+cnn_lead_time_ms,float64,756,614,306.6333333331057 | 333.299999999892 | 133.29999999989184 | 1096.6333333331058 | 436.6333333332309
+fall_samples_100hz,int64,756,127,31 | 34 | 14 | 110 | 44
+raw_falling_window_count,int64,756,20,1 | 0 | 6 | 2 | 3
+raw_activity_window_count,int64,756,61,40 | 35 | 112 | 115 | 111
+cnn_event_order_valid,bool,756,1,True
+cnn_event_inside_truth,bool,756,1,True
+cnn_fall_eligible,bool,756,2,True | False
+impact_recovery_source,str,756,1,peak_impact_magnitude_within_3s_after_fall_onset
+repository_methods_agree,bool,756,1,True
+recovery_status,str,756,1,ok
+event_policy_version,str,756,1,repository_peak_impact_magnitude_within_3s_after_fall_onset_v2
+eligibility_policy,str,756,1,>=30 actual samples on corrected 100Hz grid and >=1 complete 30-sample window
+sampling_rate_hz,int64,756,1,100
+window_samples,int64,756,1,30
+stride_samples,int64,756,1,15
+nominal_window_ms,int64,756,1,300
+window_overlap_percent,int64,756,1,50
+cnn_exclusion_reason,str,165,1,recovered_interval_shorter_than_30_samples
