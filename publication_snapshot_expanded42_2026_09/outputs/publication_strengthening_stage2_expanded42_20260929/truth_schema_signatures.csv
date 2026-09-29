@@ -1,0 +1,2 @@
+schema_id,file_count,n_columns,example_file,columns
+1,756,16,/mnt/hdd16T/ToqeerHomeBackup/mujoco_project/outputs/_highrate_overnight/campaign_highrate_truth_v3_rne_corrected396/runs/P014/task_20/scenario20_age20_h1p52_sex_female_w48p0_20260826_105752/fall_scenario20_age20_20260826_105752_highrate_truth.csv,timestamp | accel_true_x | accel_true_y | accel_true_z | gyro_true_x | gyro_true_y | gyro_true_z | accel_true_mag | gyro_true_mag | sensor_pos_x | sensor_pos_y | sensor_pos_z | sensor_vel_x | sensor_vel_y | sensor_vel_z | pelvis_height
